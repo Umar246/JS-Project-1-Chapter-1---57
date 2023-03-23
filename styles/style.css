@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway&family=Ubuntu&display=swap");
+body {
+  font-family: raleway, ubuntu !important;
+  font-weight: lighter !important;
+  background: #4B79A1; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 27rem;
+  border: 1px solid black !important;
+  color: #1b4965;
+  margin-top: 12%;
+  background-color: #62b6cb;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 10px;
+  border: 2px solid #62b6cb !important;
+}
+.container a {
+  color: #1b4965 !important;
+}
+.container a:hover {
+  color: #1b4965 !important;
+  text-decoration: underline;
+}
+
+.inputs {
+  border: none;
+  outline: none;
+}
+
+#lostPass {
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.inputs {
+  background-color: #1b4965;
+  color: #62b6cb;
+}
+
+.inputs:focus {
+  background-color: rgba(145, 15, 41, 0.925);
+  color: #62b6cb;
+}
+
+.inputs::-moz-placeholder {
+  color: #62b6cb;
+}
+
+.inputs::placeholder {
+  color: #62b6cb;
+}
+
+.icons {
+  background-color: #1b4965;
+  color: #62b6cb;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

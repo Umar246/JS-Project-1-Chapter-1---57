@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS Bootstrap -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/Home/styles/style.css">
+  <!-- Tostify CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>JS | Login Project | Home Page </title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header class="container-fluid">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html" style="color:#c0dee5; font-weight: bold;">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li> -->
+
+          </ul>
+          <span id="greetingMessage" class="text-light"></span>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn  text-light  btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Row 1 -->
+    <!-- Heading -->
+    <div class="row mb-5 mb-md-3">
+      <div class="col">
+        <h3 class="text-center  mt-4 "> Chapter# 1 - 52 | Login Page Project</h3>
+        <div class="col border-bottom border-secondary mt-3 "></div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <!-- Input-->
+    <div class="row mb-5 mb-md-3">
+      <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+        <h4 class="text-center">Input</h4>
+        <div id="input" class="shadow border border-secondary rounded-3 d-flex align-items-center  p-4">
+
+
+
+          <!-- Question:-
+                               Clear Button ko click karny par Clear nahi ho raha yai kasy karna hai ?  -->
+          <!-- input Box -->
+          <div class="input-group">
+            <input id="inputBox" type="text" class="form-control form-control-lg bg-transparent"
+              placeholder="Type Text Here" >
+            <button class="btn btn-outline-secondary" type="button" onclick="inputValue()">Clear</button>
+          </div>
+        </div>
+      </div>
+      <!-- Orignal string Box -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0 ">
+        <h4 class="text-center">Original Statement</h4>
+        <div id="OriginalStringBox"
+          class="shadow border border-secondary rounded-3 d-flex align-items-center justify-content-center p-4"
+          style="min-height: 122px;">
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 3-->
+    <div class="row mb-5 mb-md-3 mt-5">
+      <!-- Buttons -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0 ">
+        <h4 class="text-center">Buttons</h4>
+        <div id="input" class="shadow border border-secondary rounded-3 d-flex align-items-center  p-4">
+          <div class="buttons text-center">
+            <!-- <button id="btn-1" onclick="lowercaseText()" class="btn btn-success">Convert to Lowercase</button>
+            <button id="btn-2" onclick="uppercaseText()" class="btn btn-success">Convert to Uppercase</button>
+            <button id="btn-3" onclick="capitalizeText()" class="btn btn-success">Convert to Capitalize</button>
+            <button id="btn-4" onclick="betterFormatting()" class="btn btn-success">Better Formatting</button> -->
+            <button id="btn-5" onclick="printCities()" class="btn btn-success">Print All Cities</button>
+            <button id="btn-6" onclick="addingCity()" class="btn btn-success">Add Your City In List</button>
+            <button id="btn-7" onclick="checkCity()" class="btn btn-success">Check Your City In List</button>
+            <!-- <button id="btn-8" onclick="findingWord()" class="btn btn-success">Find This Word</button>
+            <button id="btn-9" onclick="replaceWord()" class="btn btn-success">Replace This Word</button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Output / Result Box-->
+      <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+        <h4 class="text-center">Output / Result</h4>
+        <div id="outputBox" class="shadow border border-secondary rounded-3 d-flex align-items-center  p-4"
+          style="min-height: 180px;">
+           
+        </div>
+        <Button id="clear-2" onclick="clear2()" class="shadow shadow-1 btn btn-success border px-5 mt-3 " style="background-color:#1b4965">Clear</Button>
+      </div>
+
+    </div>
+
+
+
+
+  </main>
+  <footer class="mb-0">
+    <div class="container">
+      <div class="row">
+        <div>
+          <p class="col text-center py-2 mb-0">&copy;2022.Assignment by Muhammad Umar Hayaat</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Toastify JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <!-- JS File -->
+  <script src="/Home/script2.js"></script>
+</body>
+
+</html>
